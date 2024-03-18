@@ -102,7 +102,7 @@ class Render:
 		while (self.width_in_pixel > self.render_width or self.height_in_pixel > self.render_height) and self.rendering_zoom > 1 :
 			self.rendering_zoom = self.rendering_zoom - 1
 			self.get_size_from_bounds_and_zoom_level()
-			print "define_zoom_level w: %s, h: %s, z: %s" % (self.width_in_pixel, self.height_in_pixel, self.rendering_zoom)
+			print("define_zoom_level w: %s, h: %s, z: %s" % (self.width_in_pixel, self.height_in_pixel, self.rendering_zoom))
 
 
 	def get_bounds(self):
@@ -139,7 +139,7 @@ class Render:
 
 		self.rendering_bounds = Bounds(top_left.lon, bottom_right.lon, bottom_right.lat, top_left.lat)
 
-		print self.rendering_bounds
+		print(self.rendering_bounds)
 
 	def get_size_from_bounds_and_zoom_level(self):
 
